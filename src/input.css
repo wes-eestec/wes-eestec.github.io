@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+    --color-wesyellow-50: oklch(98.09% 0.0214 95.28);
+    --color-wesyellow-100: oklch(95.73% 0.0577 97.74);
+    --color-wesyellow-200: oklch(91.29% 0.1046 94.87);
+    --color-wesyellow-300: oklch(85.58% 0.1451 90.34);
+    --color-wesyellow-400: oklch(80.33% 0.1561 83.11);
+    --color-wesyellow-500: oklch(73.56% 0.151 75.94);
+    --color-wesyellow-600: oklch(62.95% 0.1371 65.58);
+    --color-wesyellow-700: oklch(51.74% 0.1178 58.01);
+    --color-wesyellow-800: oklch(44.93% 0.1007 53.8);
+    --color-wesyellow-900: oklch(39.89% 0.0872 49.07);
+    --color-wesyellow-950: oklch(27.1% 0.0628 45.11);
+    
+    --color-wesbrown-50: oklch(97.81% 0.0158 110.55);
+    --color-wesbrown-100: oklch(95.06% 0.0458 109.92);
+    --color-wesbrown-200: oklch(90.67% 0.0875 110.15);
+    --color-wesbrown-300: oklch(85.54% 0.1281 108.34);
+    --color-wesbrown-400: oklch(80.2% 0.1454 106.63);
+    --color-wesbrown-500: oklch(74.27% 0.1369 103.53);
+    --color-wesbrown-600: oklch(64.38% 0.1152 97.13);
+    --color-wesbrown-700: oklch(53.33% 0.0896 89.87);
+    --color-wesbrown-800: oklch(46.74% 0.0711 85.72);
+    --color-wesbrown-900: oklch(41.8% 0.0576 80.14);
+    --color-wesbrown-950: oklch(27.99% 0.0386 74.94);
+    
+    --color-wesgray-50: oklch(97.31% 0 0);
+    --color-wesgray-100: oklch(92.8% 0 0);
+    --color-wesgray-200: oklch(86.07% 0 0);
+    --color-wesgray-300: oklch(75.72% 0 0);
+    --color-wesgray-400: oklch(62.68% 0 0);
+    --color-wesgray-500: oklch(53.48% 0 0);
+    --color-wesgray-600: oklch(47.84% 0 0);
+    --color-wesgray-700: oklch(42.76% 0 0);
+    --color-wesgray-800: oklch(39.04% 0 0);
+    --color-wesgray-900: oklch(36% 0 0);
+    --color-wesgray-950: oklch(21.78% 0 0);
+    
+    --font-display: 'Almarena Neue', helvetica, arial, sans-serif;
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@font-face {
+    font-family: 'Almarena Neue';
+    src: url('./assets/fonts/AlmarenaNeue-ExtraBoldDisplay.woff2') format('woff2'),
+        url('./assets/fonts/AlmarenaNeue-ExtraBoldDisplay.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Almarena Neue';
+    src: url('./assets/fonts/AlmarenaNeue-SemiBoldDisplay.woff2') format('woff2'),
+        url('./assets/fonts/AlmarenaNeue-SemiBoldDisplay.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
