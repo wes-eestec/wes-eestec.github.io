@@ -27,9 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }).slice(0, 4); // Get the first four upcoming events
 
         // Generate HTML for the upcoming events
-        const eventsHTML = upcomingEvents.map(event => `
-          <p>${formatDate(event.date)} - <strong>${event.name}</strong></p>
-        `).join('');
+        const eventsHTML = upcomingEvents.map(event => {
+          const lecturerText = event.lecturer ? ` (${event.lecturer})` : '';
+          return `<p>${formatDate(event.date)} - <strong>${event.name}</strong>${lecturerText}</p>`;
+        }).join('');
 
         // Append the events HTML to the container
         eventsContainer.innerHTML = eventsHTML;
