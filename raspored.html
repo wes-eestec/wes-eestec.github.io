@@ -26,12 +26,10 @@
     <title>WES - Workshop On Embedded Systems</title>
     <link rel="icon" href="src/assets/imgs/favicon.svg">
     
-    <script src="https://cdn.counter.dev/script.js" data-id="752f82cb-13da-41c9-84f5-8994c3ab9377" data-utcoffset="1"></script>
-    
     <meta name="description" content="WES (Workshop on Embedded Systems) jedina je studentska radionica u Hrvatskoj posvećena ugradbenim računalnim sustavima. Okupljamo inovativne umove, potičemo kreativna i praktična rješenja te oblikujemo buduće lidere tehnološke industrije.">
     <meta property="og:title" content="WES - Workshop On Embedded Systems">
     <meta property="og:description" content="WES (Workshop on Embedded Systems) jedina je studentska radionica u Hrvatskoj posvećena ugradbenim računalnim sustavima. Okupljamo inovativne umove, potičemo kreativna i praktična rješenja te oblikujemo buduće lidere tehnološke industrije.">
-    <meta property="og:image" content="src/assets/imgs/ogimage.jpg">
+    <meta property="og:image" content="https://wes-eestec.github.io/src/assets/imgs/ogimage.jpg">
     <meta property="og:url" content="TBA">
     <meta name="twitter:card" content="summary_large_image">
     
@@ -59,6 +57,11 @@
         #MOBILE-NAV:not(.hidden) {
             opacity: 1;
             transform: translateY(0);
+        }
+        
+        #EVENTS-CONTAINER a:hover span {
+            background-color: var(--color-wesgray-900);
+            color: var(--color-wesyellow-500)
         }
     </style>
 </head>
@@ -103,43 +106,8 @@
       </header>
     
     <!-- schedule -->    
-    <section class="space-y-8 mx-6 sm:mx-12 md:mx-24 text-wesgray-950 font-display">
-        <div class="flex flex-col rounded-xl bg-wesyellow-400 p-8 space-y-16">
-            <div class="flex flex-col md:flex-row">
-                <div class="font-display text-xl md:text-2xl md:mr-24 tracking-tight">
-                    <p class="inline md:block">Ponedjeljak</p>
-                    <p class="-mt-1 inline md:block">24.03.2025.</p>
-                </div>
-                
-                <div>
-                    <div class="space-y-8 md:space-y-12">
-                        <h2 class="text-4xl md:text-5xl mb-2 mt-1 md:mt-0 tracking-tight leading-10">Otvorenje radionice</h2>
-                        <p class="font-sans text-sm md:text-base"><span class="py-1 px-1.5 mr-2 md:mr-2.5 bg-wesgray-950 text-wesyellow-400 rounded-md md:rounded-lg">13:30</span>Lokacija</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="EVENTS-CONTAINER" class="space-y-8 mx-6 sm:mx-12 md:mx-24 text-wesgray-950 font-display">
         
-        <div class="flex flex-col rounded-xl bg-wesyellow-400 p-8 space-y-16">
-            <div class="flex flex-col md:flex-row">
-                <div class="font-display text-xl md:text-2xl md:mr-24 tracking-tight">
-                    <p class="inline md:block">Utorak</p>
-                    <p class="-mt-1 inline md:block">25.03.2025.</p>
-                </div>
-                
-                <div class="space-y-8 md:space-y-12">
-                    <div>
-                        <h2 class="text-4xl md:text-5xl mb-2 mt-1 md:mt-0 tracking-tight leading-10">Naziv predavanja</h2>
-                        <p class="font-sans text-sm md:text-base"><span class="py-1 px-1.5 mr-2 md:mr-2.5 bg-wesgray-950 text-wesyellow-400 rounded-md md:rounded-lg">12:25</span>Lokacija</p>
-                    </div>
-                    
-                    <div>
-                        <h2 class="text-4xl md:text-5xl mb-2 mt-1 md:mt-0 tracking-tight leading-10">Naziv predavanja</h2>
-                        <p class="font-sans text-sm md:text-base"><span class="py-1 px-1.5 mr-2 md:mr-2.5 bg-wesgray-950 text-wesyellow-400 rounded-md md:rounded-lg">15:00</span>Lokacija</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     
     <!-- footer -->
@@ -499,58 +467,8 @@
         </div>
     </footer>
     
-    
-    <script>
-        // https://www.w3schools.com/howto/howto_js_countdown.asp
-        
-        // Set the date we're counting down to
-        var countDownDate = new Date("Mar 25, 2025 15:37:25").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-        // Get today's date and time
-        var now = new Date().getTime();
-            
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-    
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-        // Pad each value with leading zeros
-        days = String(days).padStart(2, "0");
-        hours = String(hours).padStart(2, "0");
-        minutes = String(minutes).padStart(2, "0");
-        seconds = String(seconds).padStart(2, "0");
-                
-        // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-        document.getElementById("countdownM").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-    
-        // If the count down is finished, write some text
-        if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "00:00:00:00";
-                document.getElementById("countdownM").innerHTML = "00:00:00:00";
-            }
-        }, 1000);
-    </script>
-    
-    <script>
-        // Get references to the elements
-        const hamburgerMenu = document.getElementById("HAMBURGER-MENU");
-        const mobileNav = document.getElementById("MOBILE-NAV");
-        const openIcon = document.getElementById("open-icon");
-      
-        // Toggle the navigation and icons
-        hamburgerMenu.addEventListener("click", () => {
-          mobileNav.classList.toggle("hidden");
-          openIcon.classList.toggle("fill-wesyellow-600");
-        });
-      </script>
+    <script src="src/assets/scripts/header.js"></script>
+    <script src="src/assets/scripts/schedule.js"></script>
+    <script src="https://cdn.counter.dev/script.js" data-id="752f82cb-13da-41c9-84f5-8994c3ab9377" data-utcoffset="1"></script>
 </body>
 </html>
