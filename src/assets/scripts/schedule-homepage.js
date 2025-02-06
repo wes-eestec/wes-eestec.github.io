@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const [day, month] = dateString.split('.').map(Number);
           const paddedDay = String(day).padStart(2, '0');
           const paddedMonth = String(month).padStart(2, '0');
-          return `${paddedDay}.${paddedMonth}`;
+          return `${paddedDay}.${paddedMonth}.`;
         }
 
         // Filter and sort events to get the upcoming events

@@ -1,24 +1,3 @@
-<!-- TO DO 
-- responsive layout
-- about page (masonry)
-- schedule page
-- raspored na homepageu (dinamičan)
-- og url
-
-'sm': '640px',
-// => @media (min-width: 640px) { ... }
-
-'md': '768px',
-// => @media (min-width: 768px) { ... }
-
-'lg': '1024px',
-// => @media (min-width: 1024px) { ... }
-
-'xl': '1280px',
-// => @media (min-width: 1280px) { ... }
-
--->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,14 +5,11 @@
     <title>WES - Workshop On Embedded Systems</title>
     <link rel="icon" href="src/assets/imgs/favicon.svg">
     
-    <script src="https://cdn.counter.dev/script.js" data-id="752f82cb-13da-41c9-84f5-8994c3ab9377" data-utcoffset="1"></script>
-    
     <meta name="description" content="WES (Workshop on Embedded Systems) jedina je studentska radionica u Hrvatskoj posvećena ugradbenim računalnim sustavima. Okupljamo inovativne umove, potičemo kreativna i praktična rješenja te oblikujemo buduće lidere tehnološke industrije.">
-    <meta property="og:title" content="WES - Workshop On Embedded Systems">
+    <meta property="og:title" content="O nama | WES - Workshop On Embedded Systems">
     <meta property="og:description" content="WES (Workshop on Embedded Systems) jedina je studentska radionica u Hrvatskoj posvećena ugradbenim računalnim sustavima. Okupljamo inovativne umove, potičemo kreativna i praktična rješenja te oblikujemo buduće lidere tehnološke industrije.">
     <meta property="og:image" content="https://wes-eestec.github.io/src/assets/imgs/ogimage.jpg">
     <meta property="og:url" content="TBA">
-    <meta name="twitter:card" content="summary_large_image">
     
     <link rel="stylesheet" href="src/output.css">
     
@@ -41,7 +17,7 @@
     </style>
 </head>
 
-<body class="font-sans font-semibold bg-wesgray-950 text-wesyellow-400 w-screen max-w-full h-full relative text-xs md:text-sm lg:text-base">
+<body class="font-sans font-semibold bg-wesgray-950 text-wesyellow-400 w-screen max-w-full text-xs md:text-sm lg:text-base">
     
     <!-- header for desktop -->
     <header class="z-99 hidden md:flex items-center justify-between w-full py-4 px-2 lg:py-8 lg:px-4 sticky top-0 bg-wesgray-950">
@@ -80,14 +56,208 @@
         </nav>
       </header>
     
+    
+    
+    
     <!-- intro -->
-    <section class="w-full font-display px-10 md:px-20 lg:px-80 py-4 lg:py-8 text-xl md:text-4xl">
-        <p class="tracking-tight"><strong>Error 404: </strong>Nismo mogli pronaći tu stranicu.</p>
-        <a class="font-sans text-base md:text-xl inline-block rounded-lg py-1 md:py-2 px-2 md:px-4 mt-3 bg-wesyellow-400 hover:bg-wesyellow-500 text-wesgray-950 transition-colors ease-in-out duration-200" href="index.html">Početna stranica &gt;</a>
+    <section class="w-full bg-wesyellow-400 text-wesgray-950">
+        <div class="PATTERNBROWN w-full px-15 md:px-40 lg:px-80 py-8 lg:py-12">
+            <div>
+                <p class="tracking-tight font-display text-2xl md:text-4xl">Već po <strong>deveti</strong> put, WES okuplja najbolje studente i stručnjake iz svijeta embedded sustava!</p>
+                <p class="mt-4 md:mt-8 text-base md:text-xl">Kao jedina studentska radionica u Hrvatskoj posvećena ugradbenim računalnim sustavima, okupljamo inovativne umove, potičemo kreativna i praktična rješenja te oblikujemo buduće lidere tehnološke industrije.</p>
+            </div>
+        </div>
     </section>
     
-    <footer class="w-full bg-wesyellow-400 text-wesgray-950 font-semibold absolute bottom-0 left-0">
-        <div class="PATTERNBROWN bg-cover">
+    
+    
+    
+    <!-- info -->
+    <section class="w-full p-4 lg:p-8 text-center space-y-8">
+        <div class="inline-block">
+            <div class="text-xs text-left md:text-s text-gray-200 md:text-white uppercase font-normal">Nagradni fond</div>
+            <div class="text-3xl md:text-5xl lg:text-6xl font-display tracking-tight">3000 €</div>
+        </div>
+        
+        <div class="flex justify-evenly w-full">
+            <div>
+                <div class="text-xs text-left md:text-s text-gray-200 md:text-white uppercase font-normal">Prvo mjesto</div>
+                <div class="text-2xl md:text-4xl lg:text-5xl font-display tracking-tight">2000 €</div>
+            </div>
+            <div>
+                <div class="text-xs text-left md:text-s text-gray-200 md:text-white uppercase font-normal">Drugo mjesto</div>
+                <div class="text-2xl md:text-4xl lg:text-5xl font-display tracking-tight">500 €</div>
+            </div>
+            <div>
+                <div class="text-xs text-left md:text-s text-gray-200 md:text-white uppercase font-normal">Treće mjesto</div>
+                <div class="text-2xl md:text-4xl lg:text-5xl font-display tracking-tight">500 €</div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <!-- organizacija radionice -->
+    <section class="CAROUSEL p-8 relative">
+        <div class="flex justify-between items-center px-4 h-full w-full absolute inset-0">
+            <button class="PREV cursor-pointer"><svg x="0px" y="0px" width="30px" height="30px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path class="st2 fill-white" d="M25,0C11.2,0,0,11.2,0,25c0,13.8,11.2,25,25,25s25-11.2,25-25C50,11.2,38.8,0,25,0z M38.3,26.9H18.9l8,8 l-2.7,2.7L11.7,25l12.6-12.6l2.7,2.6l-8,8h19.4V26.9z"/></svg></button>
+            <button class="NEXT cursor-pointer"><svg x="0px" y="0px" width="30px" height="30px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path class="st2 fill-white" d="M25,50c13.8,0,25-11.2,25-25C50,11.2,38.8,0,25,0S0,11.2,0,25C0,38.8,11.2,50,25,50z M11.7,23.1h19.4l-8-8 l2.7-2.7L38.3,25L25.8,37.6l-2.7-2.6l8-8H11.7V23.1z"/></svg></button>
+        </div>
+        <div class="CAROUSEL-INNER flex justify-evenly space-x-4 overflow-x-auto no-scrollbar scroll-smooth">
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between items-stretch">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Hackathon</h2>
+                    <p class="mb-3">Hackathon u organizaciji s glavnim partnerom, čiji nagradni fond ove godine iznosi preko 3000€</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/proslogodisnji/hackathon.JPG" alt="hackathon" />
+                    <a class="font-sans text-l inline-block rounded-lg py-2 px-4 mt-3 bg-wesgray-950 hover:bg-black text-wesyellow-400 transition-colors ease-in-out duration-200" href="https://forms.google.com">Prijave ↗</a>
+                </div>
+            </div>
+            
+            
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Predavanja</h2>
+                    <p class="mb-3">Predavanja stručnjaka iz akademskog i industrijskog sektora na temu ugradbenih računalnih sustava</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/proslogodisnji/predavanja.JPG" alt="Predavanja" />
+                    <a class="font-sans text-l inline-block rounded-lg py-2 px-4 mt-3 bg-wesgray-950 hover:bg-black text-wesyellow-400 transition-colors ease-in-out duration-200" href="raspored.html">Raspored &gt;</a>
+                </div>
+            </div>
+            
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Panel rasprava</h2>
+                        <p class="mb-3">Panel rasprava na odabranu temu u organizaciji naših partnera</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/proslogodisnji/panel.JPG" alt="hackathon" />
+                    <a class="font-sans text-l inline-block rounded-lg py-2 px-4 mt-3 bg-wesgray-950 hover:bg-black text-wesyellow-400 transition-colors ease-in-out duration-200" href="raspored.html">Raspored &gt;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <!-- organizatori -->
+    <section class="CAROUSEL p-8 pt-16 relative">
+        <h2 class="text-3xl lg:text-6xl font-display text-wesyellow-400 pb-4">Organizatori</h2>
+        
+        <div class="flex justify-between items-center px-4 h-full w-full absolute inset-0">
+            <button class="PREV cursor-pointer"><svg x="0px" y="0px" width="30px" height="30px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path class="st2 fill-white" d="M25,0C11.2,0,0,11.2,0,25c0,13.8,11.2,25,25,25s25-11.2,25-25C50,11.2,38.8,0,25,0z M38.3,26.9H18.9l8,8 l-2.7,2.7L11.7,25l12.6-12.6l2.7,2.6l-8,8h19.4V26.9z"/></svg></button>
+            <button class="NEXT cursor-pointer"><svg x="0px" y="0px" width="30px" height="30px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path class="st2 fill-white" d="M25,50c13.8,0,25-11.2,25-25C50,11.2,38.8,0,25,0S0,11.2,0,25C0,38.8,11.2,50,25,50z M11.7,23.1h19.4l-8-8 l2.7-2.7L38.3,25L25.8,37.6l-2.7-2.6l8-8H11.7V23.1z"/></svg></button>
+        </div>
+        <div class="CAROUSEL-INNER flex justify-evenly space-x-4 overflow-x-auto no-scrollbar scroll-smooth">
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between items-stretch">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Ime prezime</h2>
+                    <p class="mb-3">Titula</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/pfp.svg" alt="hackathon" />
+                </div>
+            </div>
+            
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between items-stretch">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Ime prezime</h2>
+                    <p class="mb-3">Titula</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/pfp.svg" alt="hackathon" />
+                </div>
+            </div>
+            
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between items-stretch">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Ime prezime</h2>
+                    <p class="mb-3">Titula</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/pfp.svg" alt="hackathon" />
+                </div>
+            </div>
+            
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between items-stretch">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Ime prezime</h2>
+                    <p class="mb-3">Titula</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/pfp.svg" alt="hackathon" />
+                </div>
+            </div>
+            
+            <div class="min-w-[200px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between items-stretch">
+                <div>
+                    <h2 class="mb-2 text-2xl lg:text-4xl font-display tracking-tight">Ime prezime</h2>
+                    <p class="mb-3">Titula</p>
+                </div>
+                <div>
+                    <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/pfp.svg" alt="hackathon" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- gallery -->
+    <div class="w-full p-8">
+        <h2 class="text-3xl lg:text-6xl font-display text-wesyellow-400 pb-4">Prošlogodišnji WES</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_3628 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_3737 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_3645 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_2508 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_2097 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_2909 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_2944 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_3183 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_2147 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_2936 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_3271 copy.jpg" alt=""></div>
+            <div><img class="h-auto max-w-full rounded-lg" src="src/assets/imgs/proslogodisnji/DSC_3579 copy.jpg" alt=""></div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- partneri -->
+    <section class="w-full p-8">
+        <h2 class="text-3xl lg:text-6xl font-display text-wesyellow-400 pb-4">Naši partneri</h2>
+        
+        <div class="flex flex-col sm:flex-row md:items-start gap-x-8 gap-y-3 lg:gap-x-16 lg:gap-y-6 flex-wrap overflow-x-auto">
+            <img class="max-h-[50px] lg:max-h-[100px] self-start" src="src/assets/imgs/partneri/partneri logo_bytelab.svg" alt="">
+            <img class="max-h-[50px] lg:max-h-[100px] self-start" src="src/assets/imgs/partneri/partneri logo_soldered.svg" alt="">
+            <img class="max-h-[50px] lg:max-h-[100px] self-start" src="src/assets/imgs/partneri/partneri logo_junheinrich.svg" alt="">
+            <img class="max-h-[50px] lg:max-h-[100px] self-start" src="src/assets/imgs/partneri/partneri logo_schneider.svg" alt="">
+            <img class="max-h-[50px] lg:max-h-[100px] self-start" src="src/assets/imgs/partneri/partneri logo_ericsson.svg" alt="">
+        </div>
+    </section>
+
+    
+    
+    
+    
+    <!-- eestec -->
+     <section class="w-full p-8">
+        <h2 class="text-3xl lg:text-6xl font-display text-wesyellow-400 pb-4">EESTEC</h2>
+        <p class="text-white">EESTEC (Electrical Engineering STudents&apos; European assoCiation) LC Zagreb je neprofitna studentska organizacija. Cilj nam je pružiti studentima FER-a (često i cijelom Sveučilištu u Zagrebu) mogućnost stjecanja praktičnih znanja koja ne mogu steći na nastavi. EESTEC djeluje u 21 državi na 48 sveučilišta te broji više od 5000 članova.</p>
+        <a class="font-sans text-base md:text-xl inline-block rounded-lg py-1 md:py-2 px-2 md:px-4 mt-3 bg-wesyellow-400 hover:bg-wesyellow-500 text-wesgray-950 transition-colors ease-in-out duration-200" href="https://eestec.hr/">Više o EESTEC-u ↗</a>
+     </section>
+    
+     <!-- footer -->
+     <footer class="w-full bg-wesyellow-400 text-wesgray-950 font-semibold mt-8">
+        <div class="PATTERNBROWN">
             <div class="py-8 pl-8">
                 <div class="flex flex-col items-start justify-start content-baseline text-right">
                     <ul>
@@ -442,58 +612,8 @@
         </div>
     </footer>
     
-    
-    <script>
-        // https://www.w3schools.com/howto/howto_js_countdown.asp
-        
-        // Set the date we're counting down to
-        var countDownDate = new Date("Mar 25, 2025 15:37:25").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-        // Get today's date and time
-        var now = new Date().getTime();
-            
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-    
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-        // Pad each value with leading zeros
-        days = String(days).padStart(2, "0");
-        hours = String(hours).padStart(2, "0");
-        minutes = String(minutes).padStart(2, "0");
-        seconds = String(seconds).padStart(2, "0");
-                
-        // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-        document.getElementById("countdownM").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-    
-        // If the count down is finished, write some text
-        if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "00:00:00:00";
-                document.getElementById("countdownM").innerHTML = "00:00:00:00";
-            }
-        }, 1000);
-    </script>
-    
-    <script>
-        // Get references to the elements
-        const hamburgerMenu = document.getElementById("HAMBURGER-MENU");
-        const mobileNav = document.getElementById("MOBILE-NAV");
-        const openIcon = document.getElementById("open-icon");
-      
-        // Toggle the navigation and icons
-        hamburgerMenu.addEventListener("click", () => {
-          mobileNav.classList.toggle("hidden");
-          openIcon.classList.toggle("fill-wesyellow-600");
-        });
-      </script>
+    <script src="src/assets/scripts/header.js"></script>
+    <script src="src/assets/scripts/schedule-homepage.js"></script>
+    <script src="https://cdn.counter.dev/script.js" data-id="752f82cb-13da-41c9-84f5-8994c3ab9377" data-utcoffset="1"></script>
 </body>
 </html>

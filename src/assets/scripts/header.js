@@ -12,6 +12,8 @@ hamburgerMenu.addEventListener("click", () => {
 
 
 
+
+
 // COUNTDOWN https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
 var countDownDate = new Date("Mar 25, 2025 15:37:25").getTime();
@@ -48,3 +50,44 @@ if (distance < 0) {
         document.getElementById("countdownM").innerHTML = "00:00:00:00";
     }
 }, 1000);
+
+
+
+// CAROUSEL
+document.addEventListener('DOMContentLoaded', function () {
+  const carousels = document.querySelectorAll('.CAROUSEL');
+  carousels.forEach(carousel => {
+      const prevButton = carousel.querySelector('.prev');
+      const nextButton = carousel.querySelector('.next');
+      const carouselInner = carousel.querySelector('.carousel-inner');
+
+      // Function to check for horizontal overflow
+      function checkOverflow() {
+          const isOverflowing = carouselInner.scrollWidth > carouselInner.clientWidth;
+          prevButton.classList.toggle('hidden', !isOverflowing);
+          nextButton.classList.toggle('hidden', !isOverflowing);
+      }
+
+      // Initial check for overflow
+      checkOverflow();
+
+      // Event listeners for buttons
+      prevButton.addEventListener('click', () => {
+          carouselInner.scrollBy({
+              left: -150,
+              behavior: 'smooth'
+          });
+      });
+
+      nextButton.addEventListener('click', () => {
+          carouselInner.scrollBy({
+              left: 150,
+              behavior: 'smooth'
+          });
+      });
+
+      // Check for overflow on window resize
+      window.addEventListener('resize', checkOverflow);
+  });
+});
+

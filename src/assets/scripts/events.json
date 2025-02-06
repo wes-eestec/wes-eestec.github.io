@@ -4,6 +4,7 @@
       "name": "Otvorenje radionice",
       "time": "13:30",
       "location": "Glavna dvorana",
+      "lecturer": "",
       "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
     },
     {
@@ -11,6 +12,7 @@
       "name": "Naziv predavanja",
       "time": "10:00",
       "location": "Dvorana A",
+      "lecturer": "ByteLab",
       "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
     },
     {
@@ -18,6 +20,7 @@
       "name": "Naziv predavanja",
       "time": "11:00",
       "location": "Dvorana A",
+      "lecturer": "ByteLab",
       "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
     },
     {
@@ -25,6 +28,15 @@
       "name": "Panel rasprava",
       "time": "15:00",
       "location": "Dvorana B",
+      "lecturer": "ByteLab",
       "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
+    },
+    {
+      "date": "05.04.2025.",
+      "name": "Zatvaranje radionice",
+      "time": "12:00",
+      "location": "Glavna dvorana",
+      "lecturer": "",
+      "URL": ""
     }
   ]

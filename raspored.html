@@ -1,24 +1,3 @@
-<!-- TO DO 
-- responsive layout
-- about page (masonry)
-- schedule page
-- raspored na homepageu (dinamičan)
-- og url
-
-'sm': '640px',
-// => @media (min-width: 640px) { ... }
-
-'md': '768px',
-// => @media (min-width: 768px) { ... }
-
-'lg': '1024px',
-// => @media (min-width: 1024px) { ... }
-
-'xl': '1280px',
-// => @media (min-width: 1280px) { ... }
-
--->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,42 +6,14 @@
     <link rel="icon" href="src/assets/imgs/favicon.svg">
     
     <meta name="description" content="WES (Workshop on Embedded Systems) jedina je studentska radionica u Hrvatskoj posvećena ugradbenim računalnim sustavima. Okupljamo inovativne umove, potičemo kreativna i praktična rješenja te oblikujemo buduće lidere tehnološke industrije.">
-    <meta property="og:title" content="WES - Workshop On Embedded Systems">
+    <meta property="og:title" content="Raspored | WES - Workshop On Embedded Systems">
     <meta property="og:description" content="WES (Workshop on Embedded Systems) jedina je studentska radionica u Hrvatskoj posvećena ugradbenim računalnim sustavima. Okupljamo inovativne umove, potičemo kreativna i praktična rješenja te oblikujemo buduće lidere tehnološke industrije.">
     <meta property="og:image" content="https://wes-eestec.github.io/src/assets/imgs/ogimage.jpg">
     <meta property="og:url" content="TBA">
-    <meta name="twitter:card" content="summary_large_image">
     
     <link rel="stylesheet" href="src/output.css">
     
     <style>
-        .PATTERNBROWN {
-            background-image: url(src/assets/imgs/pattern_brown.svg);
-        }
-        
-        #MOBILE-NAV {
-            transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-            opacity: 0;
-            transform: translateY(-10px);
-            -webkit-box-shadow: 0px 25px 20px 5px rgba(0,0,0,0.5);
-            -moz-box-shadow: 0px 25px 20px 5px rgba(0,0,0,0.5);
-            box-shadow: 0px 25px 20px 5px rgba(0,0,0,0.5);
-        }
-
-            #MOBILE-NAV.hidden {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-
-        #MOBILE-NAV:not(.hidden) {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        #EVENTS-CONTAINER a:hover span {
-            background-color: var(--color-wesgray-900);
-            color: var(--color-wesyellow-500)
-        }
     </style>
 </head>
 
