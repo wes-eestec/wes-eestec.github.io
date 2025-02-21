@@ -17,19 +17,20 @@
     </style>
 </head>
 
-<body class="font-sans font-semibold bg-wesgray-950 text-wesyellow-400 w-screen max-w-full h-full relative text-xs md:text-sm lg:text-base">
+<body class="min-h-screen flex flex-col font-sans font-semibold bg-wesgray-950 text-wesyellow-400 w-screen max-w-full text-sm md:text-base">
     
-    <!-- header for desktop -->
-    <header class="z-99 hidden md:flex items-center justify-between w-full py-4 px-2 lg:py-8 lg:px-4 sticky top-0 bg-wesgray-950">
-        <a href="/"><img src="src/assets/imgs/logotip_zuti.svg" alt="WES logo" class="max-h-8 md:max-h-16 lg:max-h-24 inline"></a>
-        
+    <div class="flex-grow">
+       <!-- header for desktop -->
+       <header id="HEADER-DESKTOP" class="z-99 hidden md:flex items-center justify-between w-full py-4 px-2 lg:py-8 lg:px-4 sticky top-0 bg-wesgray-950 transition-all duration-200 ease-in-out">
+        <a href="/">
+            <img src="src/assets/imgs/logotip_zuti.svg" alt="WES logo" class="max-h-8 md:max-h-16 lg:max-h-24 inline transition-all duration-200 ease-in-out">
+        </a>
         <div class="flex items-center space-x-4 font-normal">
             <nav class="flex space-x-6">
                 <a class="text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" href="o-nama.html">O nama</a>
                 <a class="text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" href="raspored.html">Raspored</a>
                 <a class="text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" href="https://www.forms.google.com">Prijave</a>
             </nav>
-            
             <div class="w-[200] lg:w-[260] flex items-center font-display text-xl md:text-2xl lg:text-3xl flex justify-end text-right">
                 <a class="text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" id="countdown" href="raspored.html"></a>
             </div>
@@ -39,30 +40,30 @@
     <!-- header for mobile -->
      <header class="z-99 flex md:hidden items-center justify-between w-full py-8 px-4 sticky top-0 bg-wesgray-950">
         <a href="/"><img src="src/assets/imgs/logotip_zuti.svg" alt="WES logo" class="max-h-12"></a>
-        
+    
         <a class="w-[200] md:w-[220] lg:w-[260] text-center text-xl text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" id="countdownM" href="raspored.html"></a>
-      
+    
         <button id="HAMBURGER-MENU" class="md:hidden text-wesyellow-400 hover:text-wesyellow-600 focus:outline-none cursor-pointer">
-            <!--svg id="open-icon" class="h-8 fill-wesyellow-400 transition-colors duration-200 ease-in-out" x="0px" y="0px" viewBox="0 0 201 201" style="enable-background:new 0 0 201 201;" xml:space="preserve"><g><path d="M0.4,113.4V87.6h200.3v25.8H0.4z"/></g><g><path d="M0.4,201v-25.8h200.3V201H0.4z"/></g><g><path d="M0.4,25.8V0h200.3v25.8H0.4z"/></g></svg-->
             <svg id="open-icon" class="h-8 fill-wesyellow-400 transition-colors duration-200 ease-in-out" x="0px" y="0px" viewBox="0 0 201 201" style="enable-background:new 0 0 201 201;" xml:space="preserve"><g><path d="M0.4,113.4V87.6h200.3v25.8H0.4z"/></g><g><path d="M0.4,191v-25.8h200.3V191H0.4z"/></g><g><path d="M0.4,35.8V10h200.3v25.8H0.4z"/></g></svg>
             </button>
-      
+    
         <nav id="MOBILE-NAV" class="hidden space-y-4 bg-wesgray-950 absolute md:static top-24 right-0 w-full md:w-auto px-4 py-6 font-display text-4xl text-center">
           <div class="flex flex-col">
               <a class="text-wesyellow-400 hover:text-wesyellow-600 underline transition-colors ease-in-out duration-200" href="o-nama.html">O nama</a><br>
-              <a class="text-wesyellow-400 hover:text-wesyellow-600 underline transition-colors ease-in-out duration-200" href="raspored.html">Raspored</a><br> 
+              <a class="text-wesyellow-400 hover:text-wesyellow-600 underline transition-colors ease-in-out duration-200" href="raspored.html">Raspored</a><br>
               <a class="text-wesyellow-400 hover:text-wesyellow-600 underline transition-colors ease-in-out duration-200" href="https://www.forms.google.com">Prijave</a>
           </div>
         </nav>
       </header>
-    
-    <!-- schedule -->    
-    <section id="EVENTS-CONTAINER" class="space-y-8 mx-6 sm:mx-12 md:mx-24 text-wesgray-950 font-display">
         
-    </section>
+        <!-- schedule -->
+        <section id="EVENTS-CONTAINER" class="space-y-8 mx-6 mb-12 sm:mx-12 md:mx-24 text-wesgray-950 font-display">
+        
+        </section>
+    </div>
     
     <!-- footer -->
-    <footer class="w-full bg-wesyellow-400 text-wesgray-950 font-semibold mt-8">
+    <footer class="w-full bg-wesyellow-400 text-wesgray-950 font-semibold mt-auto">
         <div class="PATTERNBROWN bg-cover">
             <div class="py-8 pl-8">
                 <div class="flex flex-col items-start justify-start content-baseline text-right">

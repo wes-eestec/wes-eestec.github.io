@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @layer utilities {
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
@@ -93,8 +95,4 @@
 #MOBILE-NAV:not(.hidden) {
     opacity: 1;
     transform: translateY(0);
-}
-
-.MASONRY-ITEM {
-    width: 200px;
 }

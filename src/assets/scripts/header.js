@@ -53,41 +53,26 @@ if (distance < 0) {
 
 
 
-// CAROUSEL
-document.addEventListener('DOMContentLoaded', function () {
-  const carousels = document.querySelectorAll('.CAROUSEL');
-  carousels.forEach(carousel => {
-      const prevButton = carousel.querySelector('.prev');
-      const nextButton = carousel.querySelector('.next');
-      const carouselInner = carousel.querySelector('.carousel-inner');
 
-      // Function to check for horizontal overflow
-      function checkOverflow() {
-          const isOverflowing = carouselInner.scrollWidth > carouselInner.clientWidth;
-          prevButton.classList.toggle('hidden', !isOverflowing);
-          nextButton.classList.toggle('hidden', !isOverflowing);
-      }
 
-      // Initial check for overflow
-      checkOverflow();
 
-      // Event listeners for buttons
-      prevButton.addEventListener('click', () => {
-          carouselInner.scrollBy({
-              left: -150,
-              behavior: 'smooth'
-          });
-      });
+// SHRINK HEADER ON SCROLL
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('#HEADER-DESKTOP');
+  const logo = document.querySelector('#HEADER-DESKTOP img');
+  const scrollPosition = window.scrollY;
 
-      nextButton.addEventListener('click', () => {
-          carouselInner.scrollBy({
-              left: 150,
-              behavior: 'smooth'
-          });
-      });
-
-      // Check for overflow on window resize
-      window.addEventListener('resize', checkOverflow);
-  });
+  if (scrollPosition > 50) { // Adjust this value based on when you want the header to shrink
+      header.classList.remove('py-4', 'lg:py-8'); // Remove larger padding
+      header.classList.add('py-4'); // Add smaller padding
+      logo.classList.remove('max-h-8', 'md:max-h-16', 'lg:max-h-24'); // Remove larger logo height
+      logo.classList.add('max-h-6', 'md:max-h-13', 'lg:max-h-20'); // Add smaller logo height
+  } else {
+      header.classList.remove('py-2'); // Remove smaller padding
+      header.classList.add('py-4', 'lg:py-8'); // Add larger padding
+      logo.classList.remove('max-h-6', 'md:max-h-13', 'lg:max-h-20'); // Remove smaller logo height
+      logo.classList.add('max-h-8', 'md:max-h-16', 'lg:max-h-24'); // Add larger logo height
+  }
 });
+
 
