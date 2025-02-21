@@ -64,8 +64,8 @@ fetch('src/assets/scripts/events.json')
                         <div class="space-y-8 md:space-y-12">
                             ${events.map(event => `
                                 <a class="block hover:text-wesgray-900 transition-all duration-200 ease-in-out" href="${event.URL}">
-                                    <h2 class="text-4xl md:text-5xl mt-1 md:mt-0 tracking-tight leading-10">${event.name}</h2>
-                                    <h3 class="text-xl md:text-2xl mb-2 md:mt-0 tracking-tight leading-10">${event.lecturer}</h2>
+                                    <h2 class="text-4xl md:text-5xl mt-1 md:mt-0 tracking-tight leading-8 md:leading-10">${event.name}</h2>
+                                    <h3 class="text-xl md:text-2xl mb-2 md:mt-0 tracking-tight leading-8 md:leading-10">${event.lecturer}</h2>
                                     <p class="font-sans text-sm md:text-base">
                                         <span class="py-1 px-1.5 mr-2 md:mr-2.5 bg-wesgray-950 text-wesyellow-400 rounded-md md:rounded-lg">${event.time}</span>
                                         ${event.location}
