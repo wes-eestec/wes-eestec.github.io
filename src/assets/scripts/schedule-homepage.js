@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Generate HTML for the upcoming events
       const eventsHTML = upcomingEvents.map(event => {
         const lecturerText = event.lecturer ? ` (${event.lecturer})` : '';
-        return `<p>${formatDate(event.date)} - <strong>${event.name}</strong>${lecturerText}</p>`;
+        return `<p>${formatDate(event.date)} - <span class="text-wesyellow-400">${event.name}</span>${lecturerText}</p>`;
       }).join('');
 
       // Append the events HTML to the container

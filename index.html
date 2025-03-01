@@ -65,7 +65,7 @@
         
             <nav id="MOBILE-NAV" class="hidden space-y-4 bg-wesgray-950 absolute md:static top-20 right-0 w-full md:w-auto px-4 pt-4 pb-6 text-xl rounded-b-lg">
               <div class="flex flex-col text-right space-y-1.5">
-                    <a class="text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" href="raspored. html">Raspored</a>
+                    <a class="text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" href="raspored.html">Raspored</a>
                     <a class="text-wesyellow-400 hover:text-wesyellow-600 transition-colors ease-in-out duration-200" href="https://www.forms.google.com">Prijave</a>
               </div>
             </nav>
@@ -97,7 +97,7 @@
             <div class="PATTERNBROWN w-full px-10 md:px-20 lg:px-80 py-8 lg:py-12">
                 <div>
                     <p class="font-display text-2xl md:text-4xl tracking-tight hyphens-manual md:hyphens-none">Već po <strong>deveti</strong> put, WES okuplja na&shy;jbolje stu&shy;dente i stručnjake iz svijeta embedded sustava!</p>
-                    <a class="font-sans text-lg md:text-2xl inline-block rounded-lg py-1 md:py-2 px-2 md:px-4 mt-3 bg-wesgray-950 hover:bg-black text-wesyellow-400 transition-colors ease-in-out duration-200" href="o-nama.html">Više o WES-u &gt;</a>
+                    <a class="font-sans text-lg md:text-2xl inline-block rounded-lg py-1 md:py-2 px-2 md:px-4 mt-3 bg-wesgray-950 hover:bg-black text-wesyellow-400 transition-colors ease-in-out duration-200" href="https://forms.google.com">Prijave na Hackathon &gt;</a>
                 </div>
             </div>
         </section>
@@ -138,7 +138,7 @@
                     <div class="min-w-[300px] max-w-sm rounded-lg shadow-sm bg-wesyellow-400 text-wesgray-950 p-5 flex flex-col justify-between items-stretch">
                         <div>
                             <h2 class="mb-2 text-3xl md:text-4xl font-display tracking-tight">Hackathon</h2>
-                            <p class="mb-3">Hackathon u organizaciji s glavnim partnerom, čiji nagradni fond ove godine iznosi preko 3000€</p>
+                            <p class="mb-3">Hackathon u organizaciji s glavnim partnerom, čiji nagradni fond ove godine iznosi 3000€</p>
                         </div>
                         <div>
                             <img class="rounded-lg mt-4" loading="lazy" src="src/assets/imgs/proslogodisnji/hackathon.JPG" alt="hackathon" />
@@ -182,21 +182,10 @@
         
         
         <!-- vrijeme i mjesto -->
-        <section class="w-full bg-wesyellow-400 text-wesgray-950 mb-4">
+        <section class="w-full text-white mb-4">
             <div class="PATTERNBROWN w-full p-8 flex flex-col sm:flex-row sm:justify-around">
-                <div class="lg:min-w-[50%]">
-                    <div class="space-y-2">
-                        <h2 class="font-display text-2xl lg:text-4xl pb-1 md:pb-4">Raspored</h2>
-                        <div id="HOMEPAGE-EVENTS-CONTAINER">
-        
-                        </div>
-                    </div>
-                    <a class="font-sans text-l inline-block rounded-lg py-2 px-4 mt-3 bg-wesgray-950 hover:bg-black text-wesyellow-400 transition-colors ease-in-out duration-200" href="raspored.html">Detaljan raspored &gt;</a>
-                </div>
-        
-        
                 <div class="lg:min-w-[50%] mt-8 sm:mt-0">
-                    <h2 class="font-display text-2xl lg:text-4xl pb-1 md:pb-4">Lokacija</h2>
+                    <h2 class="font-display text-2xl lg:text-4xl pb-1 md:pb-4 text-wesyellow-400">Lokacija</h2>
                     <div class="block lg:hidden">
                         <iframe class="invert hue-rotate-180 rounded-xl" loading="lazy" width="270" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://www.google.com/maps/embed/v1/place?q=fakultet+tehnike+i+računarstva&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         <p class="pt-2 pl-2">Fakultet elektrotehnike i računarstva<br>Unska ulica 3, Zagreb</p>
@@ -205,6 +194,16 @@
                         <iframe class="invert hue-rotate-180 rounded-xl" width="450" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://www.google.com/maps/embed/v1/place?q=fakultet+tehnike+i+računarstva&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         <p class="pt-2 pl-2">Fakultet elektrotehnike i računarstva (Unska ulica 3, Zagreb)</p>
                     </div>
+                </div>
+                
+                
+                
+                <div class="lg:min-w-[50%]">
+                    <div class="space-y-2">
+                        <h2 class="font-display text-3xl md:text-4xl lg:text-4xl text-wesyellow-400">Raspored</h2>
+                        <div id="HOMEPAGE-EVENTS-CONTAINER"></div>
+                    </div>
+                    <a class="font-sans text-l inline-block rounded-lg py-1.5 px-3 mt-3 bg-wesyellow-400 hover:bg-wesyellow-700 text-wesgray-950 transition-colors ease-in-out duration-200" href="raspored.html">Detaljan raspored &gt;</a>
                 </div>
             </div>
         </section>
@@ -237,6 +236,18 @@
         <!-- organizatori -->
         <section class="p-4 md:p-8 mb-4">
             <h2 class="text-3xl lg:text-6xl font-display text-wesyellow-400 pb-1 md:pb-4">Organizatori</h2>
+            
+            <!-- eestec -->
+            <div class="mb-8">
+                <div class="flex items-start">
+                    <img src="src/assets/imgs/EESTEC LC ZAGREB LOGO-02.svg" alt="EESTEC LC Zagreb logo" class="mr-4 md:mr-8 max-w-24 md:max-w-80">
+                    <div>
+                        <p class="text-white font-normal md:font-semibold">Organizator WES-a je EESTEC LC Zagreb. EESTEC (Electrical Engineering STudents&apos; European assoCiation) LC Zagreb je neprofitna studentska organizacija. Cilj nam je pružiti studentima FER-a (često i cijelom Sveučilištu u Zagrebu) mogućnost stjecanja praktičnih znanja koja ne mogu steći na nastavi. EESTEC djeluje u 21 državi na 48 sveučilišta te broji više od 5000 članova.</p>
+                        <a class="font-sans text-l inline-block rounded-lg py-1.5 px-3 mt-3 bg-wesyellow-400 hover:bg-wesyellow-700 text-wesgray-950 transition-colors ease-in-out duration-200" href="https://eestec.hr/">Više o EESTEC-u &gt;</a>
+                    </div>
+                </div>
+            </div>
+            
             
             <!-- carousel start -->
             <div class="relative">
@@ -322,16 +333,6 @@
                 <a href="https://ericssonnikolatesla.com/"><img class="max-h-[50px] lg:max-h-[100px] self-start" src="src/assets/imgs/partneri/partneri logo_ericsson.svg" alt="Ericsson Nikola Tesla logo"></a>
             </div>
         </section>
-        
-        
-        
-        
-        <!-- eestec -->
-         <section class="w-full p-4 md:p-8">
-            <h2 class="text-3xl lg:text-6xl font-display text-wesyellow-400 pb-1 md:pb-4">EESTEC</h2>
-            <p class="text-white">Organizator WES-a je EESTEC. EESTEC (Electrical Engineering STudents&apos; European assoCiation) LC Zagreb je neprofitna studentska organizacija. Cilj nam je pružiti studentima FER-a (često i cijelom Sveučilištu u Zagrebu) mogućnost stjecanja praktičnih znanja koja ne mogu steći na nastavi. EESTEC djeluje u 21 državi na 48 sveučilišta te broji više od 5000 članova.</p>
-            <a class="font-sans text-base md:text-xl inline-block rounded-lg py-1 md:py-2 px-2 md:px-4 mt-3 bg-wesyellow-400 hover:bg-wesyellow-500 text-wesgray-950 transition-colors ease-in-out duration-200" href="https://eestec.hr/">Više o EESTEC-u &gt;</a>
-         </section>
     </div>
     
      <!-- footer -->
