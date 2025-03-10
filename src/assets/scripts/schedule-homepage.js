@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const eventsContainer = document.getElementById('HOMEPAGE-EVENTS-CONTAINER');
 
       if (!data.show_events) {
-        eventsContainer.innerHTML = '<p><strong>Raspored dolazi uskoro!</strong></p>';
+        eventsContainer.innerHTML = '<p>Raspored dolazi uskoro!</p>';
         return;
       }
 
