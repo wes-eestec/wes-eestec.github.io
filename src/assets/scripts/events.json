@@ -1,44 +1,84 @@
 {
-  "show_events": false,
+  "show_events": true,
   
   "events": [
         {
         "date": "24.03.2025.",
         "name": "Otvorenje radionice",
-        "time": "13:30",
-        "location": "Glavna dvorana",
+        "time": "17:30",
+        "location": "",
         "lecturer": "",
-        "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
+        "URL": ""
       },
       {
         "date": "25.03.2025.",
-        "name": "Naziv predavanja",
-        "time": "10:00",
-        "location": "Dvorana A",
-        "lecturer": "ByteLab",
-        "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
-      },
-      {
-        "date": "25.03.2025.",
-        "name": "Naziv predavanja",
-        "time": "11:00",
-        "location": "Dvorana A",
-        "lecturer": "ByteLab",
-        "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
+        "name": "Razvoj 6G radijskih jedinica baziranih na embedded hardveru i softveru",
+        "time": "17:30",
+        "location": "",
+        "lecturer": "Ericsson Nikola Tesla",
+        "URL": ""
       },
       {
         "date": "26.03.2025.",
-        "name": "Panel rasprava",
-        "time": "15:00",
-        "location": "Dvorana B",
-        "lecturer": "ByteLab",
-        "URL": "https://www.instagram.com/p/DFVlMS1IZlU/"
+        "name": "Od ideje do prototipa: Dizajn i razvoj strojeva u DOK&#8209;ING&#8209;u",
+        "time": "17:30",
+        "location": "",
+        "lecturer": "DOK-ING",
+        "URL": ""
+      },
+      {
+        "date": "27.03.2025.",
+        "name": "Embedded Systems: From Idea to Market",
+        "time": "17:30",
+        "location": "",
+        "lecturer": "Byte Lab",
+        "URL": ""
+      },
+      {
+        "date": "29.03.2025.",
+        "name": "Uvod u hackathon",
+        "time": "10:00",
+        "location": "",
+        "lecturer": "Byte Lab",
+        "URL": ""
+      },
+      {
+        "date": "31.03.2025.",
+        "name": "Isplativost, kvaliteta i fleksibilnost: usporedba vlastitih i gotovih elektroničkih modula",
+        "time": "17:30",
+        "location": "",
+        "lecturer": "DOK-ING",
+        "URL": ""
+      },
+      {
+        "date": "01.04.2025.",
+        "name": "AVL Battery cell testing",
+        "time": "17:30",
+        "location": "",
+        "lecturer": "AVL",
+        "URL": ""
+      },
+      {
+        "date": "02.04.2025.",
+        "name": "Embedded C u autoindustriji i opće korištenje programskih jezika u industriji",
+        "time": "17:30",
+        "location": "",
+        "lecturer": "Global Logic",
+        "URL": ""
       },
       {
         "date": "05.04.2025.",
-        "name": "Zatvaranje radionice",
-        "time": "12:00",
-        "location": "Glavna dvorana",
+        "name": "Hackathon",
+        "time": "09:00",
+        "location": "Bird Incubator",
+        "lecturer": "",
+        "URL": ""
+      },
+      {
+        "date": "07.04.2025.",
+        "name": "Zatvorenje i panel rasprava",
+        "time": "17:30",
+        "location": "",
         "lecturer": "",
         "URL": ""
       }

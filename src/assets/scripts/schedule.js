@@ -57,20 +57,20 @@ fetch('src/assets/scripts/events.json')
             const eventHTML = `
                 <div class="flex flex-col rounded-xl bg-wesyellow-400 p-8 space-y-16">
                     <div class="flex flex-col md:flex-row">
-                        <div class="font-display text-xl md:text-2xl md:mr-24 tracking-tight">
-                            <p class="inline md:block">${dayOfWeek}</p>
+                        <div class="font-display text-lg md:text-xl md:mr-24 tracking-tight">
+                            <p class="inline md:block">${dayOfWeek},</p>
                             <p class="-mt-1 inline md:block">${date}</p>
                         </div>
                         <div class="space-y-8 md:space-y-12">
                             ${events.map(event => `
-                                <a class="block hover:text-wesgray-900 transition-all duration-200 ease-in-out" href="${event.URL}">
-                                    <h2 class="text-4xl md:text-5xl mt-1 md:mt-0 tracking-tight leading-8 md:leading-10">${event.name}</h2>
-                                    <h3 class="text-xl md:text-2xl mb-2 md:mt-0 tracking-tight leading-8 md:leading-10">${event.lecturer}</h2>
+                                <div>
+                                    <h2 class="text-3xl md:text-4xl mt-1 md:mt-0 tracking-tight leading-9 hyphens-auto md:hyphens-none">${event.name}</h2>
+                                    <h3 class="text-lg md:text-xl mb-4 mt-2 tracking-tight font-sans font-bold">${event.lecturer}</h2>
                                     <p class="font-sans text-sm md:text-base">
                                         <span class="py-1 px-1.5 mr-2 md:mr-2.5 bg-wesgray-950 text-wesyellow-400 rounded-md md:rounded-lg">${event.time}</span>
-                                        ${event.location}
+                                        <span class="font-bold -ml-2">${event.location}</span>
                                     </p>
-                                </a>
+                                </div>
                             `).join('')}
                         </div>
                     </div>
