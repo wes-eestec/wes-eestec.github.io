@@ -16,7 +16,7 @@ hamburgerMenu.addEventListener("click", () => {
 
 // COUNTDOWN https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 24, 2025 00:00:00").getTime();
+var countDownDate = new Date("Apr 05, 2025 09:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

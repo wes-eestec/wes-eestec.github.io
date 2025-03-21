@@ -70,7 +70,7 @@
         "date": "05.04.2025.",
         "name": "Hackathon",
         "time": "09:00",
-        "location": "Bird Incubator",
+        "location": "<a href=\"https://maps.app.goo.gl/RPaKh9Abq5kCBsFJ8\" class=\"hover:text-wesgray-400 transition-all duration-200 ease-in-out\">Bird Incubator</a>",
         "lecturer": "",
         "URL": ""
       },
