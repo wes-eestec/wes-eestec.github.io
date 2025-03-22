@@ -6,7 +6,7 @@
         "date": "24.03.2025.",
         "name": "Otvorenje radionice",
         "time": "17:30",
-        "location": "",
+        "location": "Siva vijećnica",
         "lecturer": "",
         "URL": ""
       },
@@ -14,7 +14,7 @@
         "date": "25.03.2025.",
         "name": "Razvoj 6G radijskih jedinica baziranih na embedded hardveru i softveru",
         "time": "17:30",
-        "location": "",
+        "location": "A-301",
         "lecturer": "Ericsson Nikola Tesla",
         "URL": ""
       },
@@ -22,7 +22,7 @@
         "date": "26.03.2025.",
         "name": "Od ideje do prototipa: Dizajn i razvoj strojeva u DOK&#8209;ING&#8209;u",
         "time": "17:30",
-        "location": "",
+        "location": "A202",
         "lecturer": "DOK-ING",
         "URL": ""
       },
@@ -30,7 +30,7 @@
         "date": "27.03.2025.",
         "name": "Embedded Systems: From Idea to Market",
         "time": "17:30",
-        "location": "",
+        "location": "A-111",
         "lecturer": "Byte Lab",
         "URL": ""
       },
@@ -38,7 +38,7 @@
         "date": "29.03.2025.",
         "name": "Uvod u hackathon",
         "time": "10:00",
-        "location": "",
+        "location": "A-202",
         "lecturer": "Byte Lab",
         "URL": ""
       },
@@ -46,7 +46,7 @@
         "date": "31.03.2025.",
         "name": "Isplativost, kvaliteta i fleksibilnost: usporedba vlastitih i gotovih elektroničkih modula",
         "time": "17:30",
-        "location": "",
+        "location": "D-273",
         "lecturer": "DOK-ING",
         "URL": ""
       },
@@ -54,7 +54,7 @@
         "date": "01.04.2025.",
         "name": "AVL Battery cell testing",
         "time": "17:30",
-        "location": "",
+        "location": "A-301",
         "lecturer": "AVL",
         "URL": ""
       },
@@ -62,7 +62,7 @@
         "date": "02.04.2025.",
         "name": "Embedded C u autoindustriji i opće korištenje programskih jezika u industriji",
         "time": "17:30",
-        "location": "",
+        "location": "A-202",
         "lecturer": "Global Logic",
         "URL": ""
       },
