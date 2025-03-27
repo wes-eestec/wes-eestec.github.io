@@ -22,7 +22,7 @@
         "date": "26.03.2025.",
         "name": "Od ideje do prototipa: Dizajn i razvoj strojeva u DOK&#8209;ING&#8209;u",
         "time": "17:30-19:30",
-        "location": "A202",
+        "location": "Slavonska avenija 22G",
         "lecturer": "DOK-ING",
         "URL": ""
       },
@@ -63,7 +63,7 @@
         "name": "Embedded C u autoindustriji i opće korištenje programskih jezika u industriji",
         "time": "17:30-19:30",
         "location": "A-202",
-        "lecturer": "Global Logic",
+        "lecturer": "GlobalLogic",
         "URL": ""
       },
       {
@@ -76,10 +76,10 @@
       },
       {
         "date": "07.04.2025.",
-        "name": "Zatvorenje i panel rasprava",
-        "time": "17:30-19:30",
+        "name": "Panel rasprava i zatvorenje",
+        "time": "14:00-16:00",
         "location": "",
-        "lecturer": "",
+        "lecturer": "Moderator: Lovro Šantek; Panelisti: ByteLab, AVL, Ericsson Nikola Tesla, GlobalLogic",
         "URL": ""
       }
     ]
