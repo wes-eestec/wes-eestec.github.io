@@ -1022,6 +1022,9 @@
   .max-h-12 {
     max-height: calc(var(--spacing) * 12);
   }
+  .max-h-20 {
+    max-height: calc(var(--spacing) * 20);
+  }
   .max-h-36 {
     max-height: calc(var(--spacing) * 36);
   }
